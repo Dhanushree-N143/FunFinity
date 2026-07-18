@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunFinity - Mini Games Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>FunFinity</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#games" class="nav-link">Games</a>
+                <a href="#leaderboard" class="nav-link">Leaderboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="hero-section active">
+            <div class="hero-content">
+    <h1 class="hero-title">
+        <span class="gradient-text">Welcome to FunFinity</span>
+        <i class="fas fa-star fun-logo-after-title"></i> </h1>
+    <p class="hero-subtitle">Where Fun Meets Infinity!</p>
+    <p class="intro-text">Experience 9 amazing mini-games with stunning visuals and addictive gameplay!</p>
+    <br>
+        <button class="cta-button" onclick="showSection('games')">
+            <span>Start Playing</span>
+            <i class="fas fa-rocket"></i>
+        </button>
+    </div>
+<div class="floating-elements">
+    <div class="floating-icon"><i class="fas fa-star"></i></div>
+    <div class="floating-icon"><i class="fas fa-heart"></i></div>
+    <div class="floating-icon"><i class="fas fa-diamond"></i></div>
+    <div class="floating-icon"><i class="fas fa-crown"></i></div>
+    </div>        
+</section>
+
+        <section id="games" class="games-section">
+            <h2 class="section-title">Choose Your Adventure</h2>
+            <div class="games-grid">
+                <div class="game-card" onclick="startGame('brainy-blitz')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon brain-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Brainy Blitz</h3>
+                        <p>Test your knowledge with rapid-fire questions!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('word-warper')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon word-icon">
+                            <i class="fas fa-spell-check"></i>
+                        </div>
+                        <h3>Word Warper</h3>
+                        <p>Guess the hidden word in 6 tries!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('blink-reaction')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon reaction-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Blink Reaction</h3>
+                        <p>Test your lightning-fast reflexes!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('serpent-sprint')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon snake-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Serpent Sprint</h3>
+                        <p>Guide the snake to collect food and grow!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('memory-mash')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon memory-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Memory Mash</h3>
+                        <p>Match pairs and challenge your memory!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('typing-turbo')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon typing-icon">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <h3>Typing Turbo</h3>
+                        <p>Type fast and accurately to beat the clock!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('color-craze')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon color-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Color Craze</h3>
+                        <p>Match colors and test your visual speed!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('number-ninja')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon number-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Number Ninja</h3>
+                        <p>Solve math problems before time runs out!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="startGame('click-commando')">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="game-icon click-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h3>Click Commando</h3>
+                        <p>Click as fast as you can to prove your speed!</p>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="leaderboard" class="leaderboard-section">
+            <h2 class="section-title">Hall of Fame</h2>
+            <div class="leaderboard-container">
+                <div class="leaderboard-tabs">
+                    <button class="tab-button active" onclick="showLeaderboard('brainy-blitz')">Brainy Blitz</button>
+                    <button class="tab-button" onclick="showLeaderboard('word-warper')">Word Warper</button>
+                    <button class="tab-button" onclick="showLeaderboard('blink-reaction')">Blink Reaction</button>
+                    <button class="tab-button" onclick="showLeaderboard('serpent-sprint')">Serpent Sprint</button>
+                    <button class="tab-button" onclick="showLeaderboard('memory-mash')">Memory Mash</button>
+                    <button class="tab-button" onclick="showLeaderboard('typing-turbo')">Typing Turbo</button>
+                    <button class="tab-button" onclick="showLeaderboard('color-craze')">Color Craze</button>
+                    <button class="tab-button" onclick="showLeaderboard('number-ninja')">Number Ninja</button>
+                    <button class="tab-button" onclick="showLeaderboard('click-commando')">Click Commando</button>
+                </div>
+                <div id="leaderboard-content" class="leaderboard-content">
+                    </div>
+            </div>
+        </section>
+
+        <section id="brainy-blitz" class="game-section game-container">
+            <h2 class="game-title">Brainy Blitz</h2>
+            <div class="game-controls">
+                <button class="game-button primary" onclick="initQuizGame()">Restart Quiz</button>
+                <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+            </div>
+            <div class="quiz-game-area">
+                <div class="quiz-header">
+                    <span class="quiz-stat">Score: <span id="quiz-score">0</span></span>
+                    <span class="quiz-stat">Question: <span id="quiz-question-num">1</span>/10</span>
+                </div>
+                <div class="quiz-progress-bar">
+                    <div id="quiz-progress" class="quiz-progress"></div>
+                </div>
+                <div class="quiz-question-container">
+                    <p id="quiz-question" class="quiz-question"></p>
+                </div>
+                <div id="quiz-options" class="quiz-options">
+                    </div>
+            </div>
+        </section>
+
+        <section id="word-warper" class="game-section game-container">
+            <h2 class="game-title">Word Warper</h2>
+            <div class="game-controls">
+                <button class="game-button primary" onclick="initWordleGame()">Restart Wordle</button>
+                <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+            </div>
+            <div class="wordle-game-area">
+                <div class="wordle-info">
+                    <span class="wordle-stat">Attempts: <span id="wordle-attempts">0</span>/6</span>
+                </div>
+                <div id="wordle-grid" class="wordle-grid">
+                    </div>
+                <div id="wordle-keyboard" class="wordle-keyboard">
+                    </div>
+            </div>
+        </section>
+
+        <section id="blink-reaction" class="game-section game-container">
+            <h2 class="game-title">Blink Reaction</h2>
+            <div class="game-controls">
+                <button class="game-button primary" id="reaction-button" onclick="startReactionTest()">Start Test</button>
+                <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+            </div>
+            <div class="reaction-game-area">
+                <div class="reaction-stats">
+                    <span>Best: <span id="reaction-best">N/A</span>ms</span>
+                </div>
+                <div id="reaction-area" class="reaction-area">
+                    <p id="reaction-text">Click "Start" to begin!</p>
+                </div>
+                <div id="reaction-results" class="reaction-results">
+                    </div>
+            </div>
+        </section>
+       <section id="serpent-sprint" class="game-section game-container">
+            <h2 class="game-title">Serpent Sprint</h2>
+            <div class="game-controls">
+                <button class="game-button primary" onclick="startSnakeGame()" id="snake-start-button">Start Game</button>
+                <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+            </div>
+            <div class="snake-game-area">
+                <div class="snake-stats">
+                    <span>Score: <span id="snake-score">0</span></span>
+                    <span>High Score: <span id="snake-high-score">0</span></span>
+                </div>
+                <canvas id="snake-canvas" width="400" height="400"></canvas>
+            </div>
+        </section>
+        <section id="memory-mash" class="game-section game-container">
+            <h2 class="game-title">Memory Mash</h2>
+            <div class="game-controls">
+                <button class="game-button primary" onclick="initMemoryGame()">Restart Game</button>
+                <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+            </div>
+            <div class="memory-game-area">
+                <div class="memory-stats">
+                    <span>Matches: <span id="memory-matches">0</span></span>
+                    <span>Moves: <span id="memory-moves">0</span></span>
+                </div>
+<div id="memory-grid" class="memory-grid"></div>
+                    </div>
+            </div>
+        </section>
+
+<section id="typing-turbo" class="game-section game-container">
+    <h2 class="game-title">Typing Turbo</h2>
+    <div class="game-controls">
+        <button class="game-button primary" onclick="startTypingGame()" id="typing-start-button">Start Game</button>
+        <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+    </div>
+    <div class="typing-game-area">
+        <div class="typing-stats">
+            <span>Time Left: <span id="typing-time">60</span>s</span>
+        </div>
+        <div class="typing-content">
+            <div id="typing-text-display" class="typing-text-display"></div>
+            <input type="text" id="typing-input" class="typing-input" placeholder="Type the full sentence here..." disabled>
+        </div>
+        <div id="typing-results"></div>
+    </div>
+</section>
+
+<section id="color-craze" class="game-section game-container">
+    <h2 class="game-title">Color Craze</h2>
+    <div class="game-controls">
+        <button class="game-button primary" onclick="startColorGame()" id="color-start-button">Start Game</button>
+        <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+    </div>
+    <div class="color-game-area">
+        <div class="color-stats">
+            <span>Score: <span id="color-score">0</span></span>
+            <span>Time: <span id="color-time">30</span>s</span>
+        </div>
+        <div id="color-prompt" class="color-prompt"></div>
+        <div id="color-options-grid" class="color-options-grid"></div>
+    </div>
+</section>
+<section id="number-ninja" class="game-section game-container">
+    <h2 class="game-title">Number Ninja</h2>
+    <div class="game-controls">
+        <button class="game-button primary" onclick="startNumberGame()" id="number-start-button">Start Game</button>
+        <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+    </div>
+    <div class="number-game-area">
+        <div class="number-stats">
+            <span>Score: <span id="number-score">0</span></span>
+            <span>Lives: <span id="number-lives">3</span></span>
+        </div>
+        <div class="number-question-container">
+            <p id="number-question" class="number-question">Press Start</p>
+        </div>
+        <input type="text" id="number-input" disabled placeholder="Enter your answer" />
+        <button id="number-submit-button" style="display:none">Submit</button>
+    </div>
+</section>
+<section id="click-commando" class="game-section game-container">
+    <h2 class="game-title">Click Commando</h2>
+    <div class="game-controls">
+        <button class="game-button primary" onclick="startClickGame()" id="click-start-button">Start Game</button>
+        <button class="game-button secondary" onclick="backToGames()">Back to Games</button>
+    </div>
+    <div class="click-game-area">
+        <div class="click-stats">
+            <span>Clicks: <span id="click-count">0</span></span>
+            <span>Time: <span id="click-time">10</span>s</span>
+        </div>
+        <div id="click-area" class="click-area" style="width:200px; height:200px; background:#222; border-radius:10px; margin: auto; cursor: pointer;">
+            <p id="click-instructions" style="color:#fff; text-align:center; line-height:200px; margin:0;">Click the target!</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Game Over!</h2>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="score-display">
+                    <i class="fas fa-trophy"></i>
+                    <p id="modal-score">Your Score: 0</p>
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-button primary" onclick="restartCurrentGame()">Play Again</button>
+                    <button class="modal-button secondary" onclick="backToGames()">Back to Games</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </div>
+    <footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 FunFinity. All rights reserved.</p>
+        <p>Designed with &#10084; by Dhanushree N</p>
+    </div>
+</footer>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "0f8c01f2-d4cc-4975-b900-dbc42fd5b594",
+        apiHost: "http://localhost:3005",
+    })
+</script>
+</body>
+</html>
